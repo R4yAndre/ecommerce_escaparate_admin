@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Link } from "react-router-dom";
-import "../../styles/ColorsMaterialsList.module.css";
+import "../../styles/ColorsMaterialsList.css";
 
 export default function ColorsList() {
   const [colores, setColores] = useState([]);
