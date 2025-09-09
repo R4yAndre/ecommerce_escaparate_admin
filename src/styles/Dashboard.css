@@ -1,0 +1,53 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff10; /* un sutil fondo translúcido */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-link {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.dashboard-link:hover {
+  background: #535bf2;
+}
+
+.dashboard-button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.dashboard-button.logout {
+  background: #d9534f;
+  color: white;
+}
+
+.dashboard-button.logout:hover {
+  background: #c9302c;
+}
