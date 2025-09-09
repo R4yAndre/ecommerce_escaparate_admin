@@ -1,0 +1,89 @@
+/* Lista */
+.products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products-list li {
+  display: flex;
+  justify-content: space-between; /* texto a la izquierda, botones a la derecha */
+  align-items: center;            /* alineados verticalmente */
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Acciones */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.actions button:hover {
+  background: #1976d2;
+}
+
+/* Formulario de agregar y editar */
+.inline-form,
+.inline-edit-form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Inputs */
+.inline-form input,
+.inline-edit-form input {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inline-form input:focus,
+.inline-edit-form input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 4px rgba(33, 150, 243, 0.3);
+  outline: none;
+}
+
+/* Botones de los formularios */
+.inline-form button,
+.inline-edit-form button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.inline-form button:hover,
+.inline-edit-form button:hover {
+  background: #1976d2;
+}
+
+/* Botón de cancelar en edición */
+.inline-edit-form button[type="button"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.inline-edit-form button[type="button"]:hover {
+  background: #bdbdbd;
+}

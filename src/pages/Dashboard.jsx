@@ -12,6 +12,12 @@ export default function Dashboard() {
         <Link to="/productos" className="dashboard-link">
           Productos
         </Link>
+        <Link to="/colores" className="dashboard-link">
+          Colores
+        </Link>
+        <Link to="/materiales" className="dashboard-link">
+          Materiales
+        </Link>
         <button onClick={logout} className="dashboard-button logout">
           Cerrar sesión
         </button>

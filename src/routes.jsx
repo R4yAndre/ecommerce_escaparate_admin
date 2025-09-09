@@ -4,6 +4,8 @@ import Dashboard from "./pages/Dashboard";
 import ProductsList from "./pages/products/ProductsList";
 import ProductForm from "./pages/products/ProductForm";
 import ProductDelete from "./pages/products/ProductDelete";
+import ColorsList from "./pages/colors/ColorsList";
+import MaterialsList from "./pages/materials/MaterialsList";
 import PrivateRoute from "./components/PrivateRoute";
 
 export default function RoutesApp() {
@@ -52,6 +54,26 @@ export default function RoutesApp() {
         element={
           <PrivateRoute>
             <ProductDelete />
+          </PrivateRoute>
+        }
+      />
+
+      {/* Colores CRUD (todo en una sola vista) */}
+      <Route
+        path="/colores"
+        element={
+          <PrivateRoute>
+            <ColorsList />
+          </PrivateRoute>
+        }
+      />
+
+      {/* Materiales CRUD (todo en una sola vista) */}
+      <Route
+        path="/materiales"
+        element={
+          <PrivateRoute>
+            <MaterialsList />
           </PrivateRoute>
         }
       />
